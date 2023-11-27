@@ -158,7 +158,7 @@ def generar_mapa() -> list:
     mapa[tesoro_x][tesoro_y] = CELDA_TESORO
 
     # Colocar pistas y trampas
-    #Recorremos las filas y columnas del mapa
+    #Recorremos las filas y columnas del mapa y comprobamos que no sea la celda del tesoro
     for i in range(DIMENSIONES):
         for j in range(DIMENSIONES):
             if mapa[i][j] != CELDA_TESORO:
